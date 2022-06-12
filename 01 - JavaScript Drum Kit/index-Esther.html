@@ -66,13 +66,15 @@
       }
       function removeTransition(e) {
         if (e.propertyName !== 'transform') return;
-        this.classList.remove('playing');
+        e.target.classList.remove('playing');
       }
 
-      const keys = document.querySelectorAll('.key');
-      keys.forEach((k) =>
-        k.addEventListener('transitionend', removeTransition)
-      );
+      // const keys = document.querySelectorAll('.key');
+      // keys.forEach((k) =>
+      //   k.addEventListener('transitionend', removeTransition)
+      // );
+      const keys = document.querySelector('.keys');
+      keys.addEventListener('transitionend', removeTransition);
       window.addEventListener('keydown', playSound);
     </script>
   </body>
