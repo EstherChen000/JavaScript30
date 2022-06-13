@@ -71,7 +71,7 @@ querySelectorAll(selectors)： 回傳一個靜態 NodeList物件(類似陣列)�
 
 selectors：CSS選擇器，須以''包覆
 
-## 元素的class屬性如何修改
+### 元素的class屬性如何修改
 
 [classList 方法列表](https://www.w3schools.com/jsref/prop_element_classlist.asp)
 幾種常用如下：
