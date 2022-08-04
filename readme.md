@@ -4,7 +4,7 @@
 
 No | Title | Note | Demo
 --- | --- | --- | ---
-01 | JavaScript Drum Kit | [Note](/01%20-%20JavaScript%20Drum%20Kit/readme.md) | [Demo](/01%20-%20JavaScript%20Drum%20Kit/index-Esther.html)
+01 | JavaScript Drum Kit | [Note](https://github.com/EstherChen000/JavaScript30/tree/dev/01%20-%20JavaScript%20Drum%20Kit) | [Demo](https://estherchen000.github.io/JavaScript30/01%20-%20JavaScript%20Drum%20Kit/index-Esther.html)
 02 | JS and CSS Clock | [Note](/02%20-%20JS%20and%20CSS%20Clock/readme.md) | [Demo](/02%20-%20JS%20and%20CSS%20Clock/index-Esther.html)
 03 | CSS Variables | [Note](/03%20-%20CSS%20Variables/readme.md) | [Demo](/03%20-%20CSS%20Variables/index-Esther.html)
 04 |
