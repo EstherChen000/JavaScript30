@@ -1,51 +1,80 @@
-html {
-  font-size: 10px;
-  background: url('./background.jpg') bottom center;
-  background-size: cover;
+:root {
+    --main-bg-color:#fefefe;
+    --main-shadow:#c8d0e7;
+    --second-shadow:#ffffff;
+    --text-light:rgb(169, 229, 254);
+    --text-color:rgba(161, 164, 173, 0.7);
+    --text-color-light:rgb(122, 182, 255);
 }
 
-body,html {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-}
-
-.keys {
+body {
+  background-color: var(--main-bg-color);
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
   display: flex;
-  flex: 1;
-  min-height: 100vh;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.key {
-  border: .4rem solid black;
-  border-radius: .5rem;
-  margin: 1rem;
-  font-size: 1.5rem;
-  padding: 1rem .5rem;
-  transition: all .07s ease;
-  width: 10rem;
+.keyboard {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  list-style: none;
+  display: flex;
+  margin: 0 auto;
+}
+
+li {
+  height: 3em;
+  width: 3em;
+  color: var(--text-color);
+  border-radius: 0.4em;
+  line-height: 3em;
+  letter-spacing: 1px;
+  margin: 0.4em;
   text-align: center;
-  color: white;
-  background: rgba(0,0,0,0.4);
-  text-shadow: 0 0 .5rem black;
+  font-size: 1em;
+}
+
+.main-color {
+  box-shadow: 0.3rem 0.3rem 0.6rem var(--main-shadow), -0.2rem -0.2rem 0.5rem var(--second-shadow);
+  transition: all .2s ease;
 }
 
 .playing {
-  transform: scale(1.1);
-  border-color: #ffc600;
-  box-shadow: 0 0 1rem #ffc600;
+  color: var(--text-color-light);
+  text-shadow: 0em 0em 0.2em var(--text-light),
+    0em 0em 0.2em var(--text-light);
+  box-shadow: inset 0.2rem 0.2rem 0.5rem var(--main-shadow),
+    inset -0.2rem -0.2rem 0.5rem var(--second-shadow);
+  transform: scale(1.05);
 }
 
-kbd {
-  display: block;
-  font-size: 4rem;
+#back {
+  width: 5em;
 }
 
-.sound {
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  letter-spacing: .1rem;
-  color: #ffc600;
+#tab {
+  width: 5em;
+}
+
+#caps {
+  width: 6em;
+}
+
+#enter {
+  width: 6em;
+}
+
+#left-shift {
+  width: 8em;
+}
+
+#right-shift {
+  width: 8em;
 }

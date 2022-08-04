@@ -6,59 +6,87 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="keys">
-      <div data-key="65" class="key">
-        <kbd>A</kbd>
-        <span class="sound">clap</span>
-      </div>
-      <div data-key="83" class="key">
-        <kbd>S</kbd>
-        <span class="sound">hihat</span>
-      </div>
-      <div data-key="68" class="key">
-        <kbd>D</kbd>
-        <span class="sound">kick</span>
-      </div>
-      <div data-key="70" class="key">
-        <kbd>F</kbd>
-        <span class="sound">openhat</span>
-      </div>
-      <div data-key="71" class="key">
-        <kbd>G</kbd>
-        <span class="sound">boom</span>
-      </div>
-      <div data-key="72" class="key">
-        <kbd>H</kbd>
-        <span class="sound">ride</span>
-      </div>
-      <div data-key="74" class="key">
-        <kbd>J</kbd>
-        <span class="sound">snare</span>
-      </div>
-      <div data-key="75" class="key">
-        <kbd>K</kbd>
-        <span class="sound">tom</span>
-      </div>
-      <div data-key="76" class="key">
-        <kbd>L</kbd>
-        <span class="sound">tink</span>
-      </div>
+    <div class="keyboard">
+      <ul class="row">
+        <li id="esc" data-key="27" class="main-color">ESC</li>
+        <li id="1" data-key="49" class="main-color">1</li>
+        <li id="2" data-key="50" class="main-color">2</li>
+        <li id="3" data-key="51" class="main-color">3</li>
+        <li id="4" data-key="52" class="main-color">4</li>
+        <li id="5" data-key="53" class="main-color">5</li>
+        <li id="6" data-key="54" class="main-color">6</li>
+        <li id="7" data-key="55" class="main-color">7</li>
+        <li id="8" data-key="56" class="main-color">8</li>
+        <li id="9" data-key="57" class="main-color">9</li>
+        <li id="0" data-key="48" class="main-color">0</li>
+        <li id="-" data-key="189" class="main-color">-</li>
+        <li id="+" data-key="187" class="main-color">+</li>
+        <li id="back" data-key="8" class="main-color">BACK</li>
+      </ul>
+      <ul class="row">
+        <li id="tab" data-key="9" class="main-color">TAB</li>
+        <li id="Q" data-key="81" class="main-color">Q</li>
+        <li id="W" data-key="87" class="main-color">W</li>
+        <li id="E" data-key="69" class="main-color">E</li>
+        <li id="R" data-key="82" class="main-color">R</li>
+        <li id="T" data-key="84" class="main-color">T</li>
+        <li id="Y" data-key="89" class="main-color">Y</li>
+        <li id="U" data-key="85" class="main-color">U</li>
+        <li id="I" data-key="73" class="main-color">I</li>
+        <li id="O" data-key="79" class="main-color">O</li>
+        <li id="P" data-key="80" class="main-color">P</li>
+        <li id="[" data-key="219" class="main-color">[</li>
+        <li id="]" data-key="221" class="main-color">]</li>
+        <li id="\" data-key="220" class="main-color">\</li>
+      </ul>
+      <ul class="row">
+        <li id="caps" data-key="20" class="main-color">CAPS</li>
+        <li id="A" data-key="65" class="main-color">A</li>
+        <li id="S" data-key="83" class="main-color">S</li>
+        <li id="D" data-key="68" class="main-color">D</li>
+        <li id="F" data-key="70" class="main-color">F</li>
+        <li id="G" data-key="71" class="main-color">G</li>
+        <li id="H" data-key="72" class="main-color">H</li>
+        <li id="J" data-key="74" class="main-color">J</li>
+        <li id="K" data-key="75" class="main-color">K</li>
+        <li id="L" data-key="76" class="main-color">L</li>
+        <li id=":" data-key="186" class="main-color">:</li>
+        <li id="double-quotes" data-key="222" class="main-color">"</li>
+        <li id="enter" data-key="13" class="main-color">ENTER</li>
+      </ul>
+      <ul class="row">
+        <li id="left-shift" data-key="16" class="main-color">SHIFT</li>
+        <li id="Z" data-key="90" class="main-color">Z</li>
+        <li id="X" data-key="88" class="main-color">X</li>
+        <li id="C" data-key="67" class="main-color">C</li>
+        <li id="V" data-key="86" class="main-color">V</li>
+        <li id="B" data-key="66" class="main-color">B</li>
+        <li id="N" data-key="78" class="main-color">N</li>
+        <li id="M" data-key="77" class="main-color">M</li>
+        <li id="," data-key="188" class="main-color">,</li>
+        <li id="." data-key="190" class="main-color">.</li>
+        <li id="/" data-key="191" class="main-color">/</li>
+        <li id="right-shift" data-key="16" class="main-color">SHIFT</li>
+      </ul>
     </div>
 
-    <audio data-key="65" src="sounds/clap.wav"></audio>
-    <audio data-key="83" src="sounds/hihat.wav"></audio>
-    <audio data-key="68" src="sounds/kick.wav"></audio>
-    <audio data-key="70" src="sounds/openhat.wav"></audio>
-    <audio data-key="71" src="sounds/boom.wav"></audio>
-    <audio data-key="72" src="sounds/ride.wav"></audio>
-    <audio data-key="74" src="sounds/snare.wav"></audio>
-    <audio data-key="75" src="sounds/tom.wav"></audio>
-    <audio data-key="76" src="sounds/tink.wav"></audio>
+    <audio src="click.mp3"></audio>
 
     <script>
+      function findKey(e){
+        let selector;
+        if(e.keyCode !== 16){
+          selector = document.querySelector(`[data-key="${e.keyCode}"]`);
+        } else if(e.keyCode === 16 && e.location === 1) {
+          selector = document.querySelector('#left-shift');
+        } else if(e.keyCode === 16 && e.location === 2) {
+          selector = document.querySelector('#right-shift');
+        }
+        return selector;
+      }
       function playSound(e) {
-        const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-        const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+        const audio = document.querySelector('audio');
+        const key = findKey(e);
         if (!audio) return;
         audio.currentTime = 0;
         audio.play();
@@ -69,12 +97,7 @@
         e.target.classList.remove('playing');
       }
 
-      // const keys = document.querySelectorAll('.key');
-      // keys.forEach((k) =>
-      //   k.addEventListener('transitionend', removeTransition)
-      // );
-      const keys = document.querySelector('.keys');
-      keys.addEventListener('transitionend', removeTransition);
+      window.addEventListener('transitionend', removeTransition);
       window.addEventListener('keydown', playSound);
     </script>
   </body>

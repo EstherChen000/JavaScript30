@@ -90,3 +90,8 @@ div.classList.toggle('visible');
 ```
 
 ## :beer: DEMO
+
+[成品](index-Esther.html)
+改成敲擊畫面上所有的按鍵後，會產生同一按鍵音效。
+動畫效果改為按鍵下凹，且字體發光的感覺。
+另外：由於左右shift鍵的keyCode相同，因此稍微改動了選取器。
